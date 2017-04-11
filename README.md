@@ -55,17 +55,19 @@ Here is an exploratory visualization of the data set. It is a bar chart showing 
 ### Design and Test a Model Architecture
 
 #### 1. Preprocessing
-##### Step 1. As a first step, I decided to convert the images to grayscale because color is not a decisive factor for recognizing the traffic signs. The decisive factor for the traffic sign would be the shape as well as the image pattern within that traffic sign. By grayscaling the image it would also increase the CNN's training speed.   
+##### Step 1. Grayscale
+
+As a first step, I decided to convert the images to grayscale because color is not a decisive factor for recognizing the traffic signs. The decisive factor for the traffic sign would be the shape as well as the image pattern within that traffic sign. By grayscaling the image it would also increase the CNN's training speed.   
 
 Here is an example of a traffic sign image before and after grayscaling.
 
 ![alt text][image5]
 
-##### Step 2. I then normalized the data set to 
+##### Step 2. Normalization
 
 As a second step, I normalized the image data to increase the performance of the CNN. Normalizing the data helps treat all the weights "fairly" when doing backpropagation. This helps prevent over compensating a correciton to one weight while under compensating in another
 
-##### Step 3. Shuffle the data
+##### Step 3. Shuffling
 
 As a last step, I shuffled the image data to avoid highly correlated batches of traning data. This helps decrease the bias of the network.  
 
