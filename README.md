@@ -14,9 +14,9 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/visualization.jpg "Visualization"
-[image2]: ./examples/grayscale.jpg "Grayscaling"
-[image3]: ./examples/random_noise.jpg "Random Noise"
+[image1]: ./ReadMe_images/Distribution_y_train.png "Distribution of Y train"
+[image2]: ./ReadMe_images/Distribution_y_validation.png "Distribution of Y validation"
+[image3]: ./ReadMe_images/Distribution_y_test.png "Distribution of Y test"
 [image4]: ./examples/placeholder.png "Traffic Sign 1"
 [image5]: ./examples/placeholder.png "Traffic Sign 2"
 [image6]: ./examples/placeholder.png "Traffic Sign 3"
@@ -24,29 +24,25 @@ The goals / steps of this project are the following:
 [image8]: ./examples/placeholder.png "Traffic Sign 5"
 
 ---
-
-1. Provide a Writeup / README that includes all the rubric points and how you addressed each one. You can submit your writeup as markdown or pdf. You can use this template as a guide for writing the report. The submission includes the project code.
-
 Here is a link to my [project code](https://github.com/Mn0491/Traffic_Sign_Classifier_Convolutional_Neural_Network/blob/master/Traffic_Sign_Classifier.ipynb)
 
 ### Data Set Summary & Exploration
 
-####1. Provide a basic summary of the data set. In the code, the analysis should be done using python, numpy and/or pandas methods rather than hardcoding results manually.
+#### 1. Load the Data
 
-I used the pandas library to calculate summary statistics of the traffic
-signs data set:
+I used python and numpy to calculate some the summary statistics of the traffic sign data set
 
-* The size of training set is ?
-* The size of the validation set is ?
-* The size of test set is ?
-* The shape of a traffic sign image is ?
-* The number of unique classes/labels in the data set is ?
+* The size of training set is 34,799
+* The size of the validation set is 4,410
+* The size of test set is 12,630
+* The shape of a traffic sign image is (32, 32, 3)
+* The number of unique classes/labels in the data set is 43
 
-####2. Include an exploratory visualization of the dataset.
+#### visualization of the dataset.
 
-Here is an exploratory visualization of the data set. It is a bar chart showing how the data ...
+Here is an exploratory visualization of the data set. It is a bar chart showing the distribution of the training data
 
-![alt text][image1]
+![Distribution of Y train][image1]
 
 ###Design and Test a Model Architecture
 
