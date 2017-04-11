@@ -6,7 +6,7 @@
 [image2]: ./ReadMe_images/Distribution_y_validation.png "Distribution of Y validation"
 [image3]: ./ReadMe_images/Distribution_y_test.png "Distribution of Y test"
 [image4]: ./ReadMe_images/trafficsigns.png "traffic signs"
-[image5]: ./examples/placeholder.png "Traffic Sign 2"
+[image5]: ./ReadMe_images/5_gray.png "grayscale"
 [image6]: ./examples/placeholder.png "Traffic Sign 3"
 [image7]: ./examples/placeholder.png "Traffic Sign 4"
 [image8]: ./examples/placeholder.png "Traffic Sign 5"
@@ -46,21 +46,22 @@ I used python and numpy to calculate some the summary statistics of the traffic 
 * The shape of a traffic sign image is (32, 32, 3)
 * The number of unique classes/labels in the data set is 43
 
-#### visualization of the dataset.
+#### Visualization of the dataset.
 
 Here is an exploratory visualization of the data set. It is a bar chart showing the distribution of the training data
 
 ![Distribution of Y train][image1]
 
-###Design and Test a Model Architecture
+### Design and Test a Model Architecture
 
-####1. Describe how you preprocessed the image data. What techniques were chosen and why did you choose these techniques? Consider including images showing the output of each preprocessing technique. Pre-processing refers to techniques such as converting to grayscale, normalization, etc. (OPTIONAL: As described in the "Stand Out Suggestions" part of the rubric, if you generated additional data for training, describe why you decided to generate additional data, how you generated the data, and provide example images of the additional data. Then describe the characteristics of the augmented training set like number of images in the set, number of images for each class, etc.)
+#### 1. Describe how you preprocessed the image data. What techniques were chosen and why did you choose these techniques? Consider including images showing the output of each preprocessing technique. Pre-processing refers to techniques such as converting to grayscale, normalization, etc. (OPTIONAL: As described in the "Stand Out Suggestions" part of the rubric, if you generated additional data for training, describe why you decided to generate additional data, how you generated the data, and provide example images of the additional data. Then describe the characteristics of the augmented training set like number of images in the set, number of images for each class, etc.)
 
-As a first step, I decided to convert the images to grayscale because ...
+#### 1. Preprocessing
+* As a first step, I decided to convert the images to grayscale because color is not a decisive factor for recognizing the traffic signs. The decisive factor for the traffic sign would be the shape as well as the image pattern within that traffic sign. By grayscaling the image it would also increase the CNN's training speed.   
 
 Here is an example of a traffic sign image before and after grayscaling.
 
-![alt text][image2]
+![alt text][image5]
 
 As a last step, I normalized the image data because ...
 
