@@ -1,7 +1,24 @@
 **Traffic Sign Recognition**
 ---
+[//]: # (Image References)
 
-**Build a Traffic Sign Recognition Project**
+[image1]: ./ReadMe_images/Distribution_y_train.png "Distribution of Y train"
+[image2]: ./ReadMe_images/Distribution_y_validation.png "Distribution of Y validation"
+[image3]: ./ReadMe_images/Distribution_y_test.png "Distribution of Y test"
+[image4]: ./ReadMe_images/trafficsigns.png "traffic signs"
+[image5]: ./examples/placeholder.png "Traffic Sign 2"
+[image6]: ./examples/placeholder.png "Traffic Sign 3"
+[image7]: ./examples/placeholder.png "Traffic Sign 4"
+[image8]: ./examples/placeholder.png "Traffic Sign 5"
+
+**Build a Traffic Sign Recognition Convolutional Neural Network**
+#### Tools used
+* Python 3.6
+* Numpy
+* Matplotlib
+* Tensorflow
+* Jupyter notebook
+* AWS GPU Instance
 
 The goals / steps of this project are the following:
 * Load the data set (see below for links to the project data set)
@@ -11,18 +28,7 @@ The goals / steps of this project are the following:
 * Analyze the softmax probabilities of the new images
 * Summarize the results with a written report
 
-
-[//]: # (Image References)
-
-[image1]: ./ReadMe_images/Distribution_y_train.png "Distribution of Y train"
-[image2]: ./ReadMe_images/Distribution_y_validation.png "Distribution of Y validation"
-[image3]: ./ReadMe_images/Distribution_y_test.png "Distribution of Y test"
-[image4]: ./examples/placeholder.png "Traffic Sign 1"
-[image5]: ./examples/placeholder.png "Traffic Sign 2"
-[image6]: ./examples/placeholder.png "Traffic Sign 3"
-[image7]: ./examples/placeholder.png "Traffic Sign 4"
-[image8]: ./examples/placeholder.png "Traffic Sign 5"
-
+![traffic signs][image4]
 ---
 Here is a link to my [project code](https://github.com/Mn0491/Traffic_Sign_Classifier_Convolutional_Neural_Network/blob/master/Traffic_Sign_Classifier.ipynb)
 
