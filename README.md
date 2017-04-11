@@ -12,6 +12,9 @@
 [image8]: ./examples/placeholder.png "Traffic Sign 5"
 
 **Build a Traffic Sign Recognition Convolutional Neural Network**
+
+![traffic signs][image4]
+
 #### Tools used
 * Python 3.6
 * Numpy
@@ -28,7 +31,6 @@ The goals / steps of this project are the following:
 * Analyze the softmax probabilities of the new images
 * Summarize the results with a written report
 
-![traffic signs][image4]
 ---
 Here is a link to my [project code](https://github.com/Mn0491/Traffic_Sign_Classifier_Convolutional_Neural_Network/blob/master/Traffic_Sign_Classifier.ipynb)
 
