@@ -71,22 +71,27 @@ As a second step, I normalized the image data to increase the performance of the
 
 As a last step, I shuffled the image data to avoid highly correlated batches of traning data. This helps decrease the bias of the network.  
 
-####2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
+#### 2. Model Architecture
 
 My final model consisted of the following layers:
 
 | Layer         		|     Description	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| Input         		| 32x32x3 RGB image   							| 
-| Convolution 3x3     	| 1x1 stride, same padding, outputs 32x32x64 	|
+| Input         		      | 32x32x1 Grayscale image   							| 
+| Convolution 5x5     	 | 1x1 stride, Valid padding, outputs 28x28x6 	|
 | RELU					|												|
-| Max pooling	      	| 2x2 stride,  outputs 16x16x64 				|
-| Convolution 3x3	    | etc.      									|
-| Fully connected		| etc.        									|
-| Softmax				| etc.        									|
-|						|												|
-|						|												|
- 
+| Max pooling	2x2      	| 2x2 stride,  outputs 14x14x64 				|
+| Convolution 5x5	      | 1x1 stride, Valid padding, outputs 10x10x16 	|
+| RELU					             |												            |
+| Max pooling	2x2      	| 2x2 stride,  outputs 5x5x16 				|
+| Flatten               | outputs 400        									      |
+|	Fully Connected Layer	|	outputs 120											|
+| RELU					             |												            |
+|	Dropout              	|	70% Keep probability											|
+|	Fully Connected Layer	|	outputs 84											|
+| RELU					             |												            |
+|	Dropout              	|	70% Keep probability											|
+|	Fully Connected Layer	|	outputs 43											|
 
 
 ####3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
