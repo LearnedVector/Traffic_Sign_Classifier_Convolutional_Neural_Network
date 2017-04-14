@@ -7,11 +7,11 @@
 [image3]: ./ReadMe_images/Distribution_y_test.png "Distribution of Y test"
 [image4]: ./ReadMe_images/trafficsigns.png "traffic signs"
 [image5]: ./ReadMe_images/5_gray.png "grayscale"
-[image6]: ./ReadMe_images/1.png "1"
-[image7]: ./ReadMe_images/2.png "2"
-[image8]: ./ReadMe_images/3.png "3"
-[image9]: ./ReadMe_images/4.png "4"
-[image10]: ./ReadMe_images/5.png "5"
+[image6]: ./web_images/1.png "1"
+[image7]: ./web_images/2.png "2"
+[image8]: ./web_images/3.png "3"
+[image9]: ./web_images/4.png "4"
+[image10]: ./web_images/5.png "5"
 
 **Build a Traffic Sign Recognition Convolutional Neural Network**
 
@@ -116,7 +116,7 @@ I chose to do an iterative approach on training my neural network. First I chose
  
 ### Test a Model on New Images
 
-####1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
+####1. Images found on web
 
 Here are five German traffic signs that I found on the web:
 
