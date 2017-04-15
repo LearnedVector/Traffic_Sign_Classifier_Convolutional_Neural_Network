@@ -123,7 +123,7 @@ Here are five German traffic signs that I found on the web:
 ![alt text][image6] ![alt text][image7] ![alt text][image8] 
 ![alt text][image9] ![alt text][image10]
 
-The first image might be difficult to classify because ...
+The signs with a white background may be hard to predict since most signs has some sort of actual background image of the enciroment.
 
 ####2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
@@ -131,14 +131,14 @@ Here are the results of the prediction:
 
 | Image			        |     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| Stop Sign      		| Stop sign   									| 
-| U-turn     			| U-turn 										|
-| Yield					| Yield											|
-| 100 km/h	      		| Bumpy Road					 				|
-| Slippery Road			| Slippery Road      							|
+| Turn Right Ahead      		     | Turn Right Ahead   								 	| 
+| 80km/h     			        | 30km/h 										     |
+| 20km/h					            | 30km/h            |
+| Stop	      		     | Stop					 		  		|
+| Roundabout			      | Priority Road      			|
 
 
-The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of ...
+The model was able to correctly guess 2 of the 5 traffic signs, which gives an accuracy of 40%. The test prediction was at 91.5% which performed a lot better. This is not the greatest of all accuracy and it could be do to not augmenting the images for the training pipeline. 
 
 ####3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
@@ -148,14 +148,52 @@ For the first image, the model is relatively sure that this is a stop sign (prob
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| .60         			| Stop sign   									| 
-| .20     				| U-turn 										|
-| .05					| Yield											|
-| .04	      			| Bumpy Road					 				|
-| .01				    | Slippery Road      							|
+| .99         			       | Turn Right Ahead   									| 
+| .005    				          | Right of way 										|
+| .001					| End of speed limit											|
+| .001	      			| Beware of Ice					 				|
+| .001				    | Stop      							|
 
 
 For the second image ... 
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| .9999         			       | 30km/h   									| 
+| .00    				            | 50km/h 										|
+| .00				             | End of Speed											|
+| .00      		        	| 80km/h					 				|
+| .00			            | 60km/h      							|
+
+For the third image ... 
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| .95        			       | 30km/h   									| 
+| .04    				            | Turn right ahead 										|
+| .0002				             | Yield											|
+| .00      		        	| Stop					 				|
+| .00			            | 70km/h      							|
+
+For the fourth image ... 
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| .99        			       | Stop   									| 
+| .001    				            | Turn left ahead 										|
+| .00			             | Keep Right											|
+| .00      		        	| 20km/h					 				|
+| .00			            | Turn Right Ahead|
+
+For the fifth image ... 
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| .59        			       | Priority Road   									| 
+| .28   				            | Keep Right 										|
+| .05			             | End of all speed and passing limits											|
+| .04      		        	| End of no passing					 				|
+| .01			            | Roundabout|
 
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 ####1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
