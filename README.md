@@ -125,9 +125,9 @@ Here are five German traffic signs that I found on the web:
 
 The signs with a white background may be hard to predict since most signs has some sort of actual background image of the enciroment.
 
-####2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
+#### 2. Here are the results of the prediction:
 
-Here are the results of the prediction:
+
 
 | Image			        |     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
@@ -140,11 +140,7 @@ Here are the results of the prediction:
 
 The model was able to correctly guess 2 of the 5 traffic signs, which gives an accuracy of 40%. The test prediction was at 91.5% which performed a lot better. This is not the greatest of all accuracy and it could be do to not augmenting the images for the training pipeline. 
 
-####3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
-
-The code for making predictions on my final model is located in the 11th cell of the Ipython notebook.
-
-For the first image, the model is relatively sure that this is a stop sign (probability of 0.6), and the image does contain a stop sign. The top five soft max probabilities were
+#### 3. Probability of predictions
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
